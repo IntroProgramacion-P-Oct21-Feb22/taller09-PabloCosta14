@@ -21,7 +21,7 @@ public class Ejercicio00 {
         double[] promediosFinales = new double[5];
 
         double sumaNotas; //= promediosMateria1[2] + promediosMateria2[2];
-        double promedio ;//= sumaNotas / 2;
+        double promedio;//= sumaNotas / 2;
 
         String mensajeFinal = ""; // variable que acumula un reporte final
         // Se hace uso del ciclo repetitivo for para recorrer los arreglos
