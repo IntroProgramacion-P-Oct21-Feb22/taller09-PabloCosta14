@@ -19,30 +19,31 @@ public class Ejercicio03 {
         double[] arreglo = {1, 10, 11, 12, 12, 13, 16, 2, 3, 4, 9, 10, 21};
         double elementosArribaMedia = 0;
         double elementosAbajoMedia = 0;
-        double promedio;
+        double media;
         double suma = 0;
-        String mensajeFinal = "";
 
         for (int i = 0; i < arreglo.length; i++) {
             suma = suma + arreglo[i];
-            promedio = suma / 13;
+        }
+        for (int i = 0; i < arreglo.length; i++) {
 
-            if (arreglo[i] > promedio) {
-                elementosArribaMedia = arreglo[i];
-                System.out.printf("Elemento Arriba de la media %.2f\n",
-                        elementosArribaMedia);
+            media = suma / arreglo.length;
+
+            if (arreglo[i] > media) {
+                elementosArribaMedia = elementosArribaMedia + 1;
 
             } else {
-                if (arreglo[i] < promedio) {
-                    elementosAbajoMedia = arreglo[i];
-                    System.out.printf("Elemento abajo de la media %.2f\n",
-                            elementosAbajoMedia);
+                if (arreglo[i] < media) {
+                    elementosAbajoMedia = elementosAbajoMedia + 1;
 
                 }
 
             }
 
         }
+        System.out.printf("Los Elementos Arriba de la media son %.2f\nLos Elementos "
+                + "debajo de la media son: %.2f\n", elementosArribaMedia,
+                elementosAbajoMedia);
 
     }
 
